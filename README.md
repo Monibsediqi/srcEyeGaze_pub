@@ -1,7 +1,11 @@
 # EyeGaze
 [[Home]](http://monibsediqi.github.io)
 
+#### This repo contains part of the code. For access to all code and algorithms, please contact me via the following email.
+
 Contact: Monib Sediqi (kh.monib@gmail.com)
+
+Check the report and explanations in here. [[Report]](https://monibsediqi.github.io/assets/files/gaze_report_brief_report.pdf)
 
 ## Overview
 A desktop and mobile gaze app that accurately estimates user's gaze on screen using the available webcam of computer or mobile. 
