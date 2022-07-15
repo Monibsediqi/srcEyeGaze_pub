@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/preview_display_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/no_camera_access_view"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:text="@string/no_camera_access" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/preview_draw_gaze"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--        <com.pr331.gazeapp.GraphicOverlay-->
+        <!--            android:id="@+id/graphic_overlay"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"/>-->
+
+
+        <TextView
+            android:id="@+id/touch_draw"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/red_circle"
+            android:padding="0dp"
+            android:text="On"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/calibration_draw"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/purple_circle"
+            android:padding="0dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/current_gaze_draw"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="0dp"
+            android:visibility="invisible"
+            android:background="@drawable/paasta_circle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/touch_pos_textbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Touch position: NaN"
+                android:textColor="#0000ff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gaze_position_textbox"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Gaze position: NaN"
+                android:textColor="#00ff00"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/current_gaze_pos_textbox"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:text="Current gaze position: NaN"
+                android:textColor="#ff0000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

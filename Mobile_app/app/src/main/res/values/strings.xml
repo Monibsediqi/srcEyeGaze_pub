@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GazeV0.2</string>
+    <string name="no_camera_access" translatable="false">Please touch to grant camera permissions.\nThis app need camera to work normally.</string>
+</resources>
